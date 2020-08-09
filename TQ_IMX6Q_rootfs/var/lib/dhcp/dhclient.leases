@@ -1,0 +1,50 @@
+default-duid "\000\001\000\001\"]\357\251 \247\207\000s\"";
+lease {
+  interface "eth0";
+  fixed-address 192.168.1.106;
+  option subnet-mask 255.255.255.0;
+  option routers 192.168.1.2;
+  option dhcp-lease-time 7200;
+  option dhcp-message-type 5;
+  option domain-name-servers 202.96.128.166,202.96.134.133;
+  option dhcp-server-identifier 192.168.1.2;
+  renew 2 2018/04/10 10:40:12;
+  rebind 2 2018/04/10 11:28:08;
+  expire 2 2018/04/10 11:43:08;
+}
+lease {
+  interface "wlan0";
+  fixed-address 192.168.23.5;
+  option subnet-mask 255.255.255.0;
+  option routers 192.168.23.1;
+  option dhcp-lease-time 172800;
+  option dhcp-message-type 5;
+  option dhcp-server-identifier 192.168.23.1;
+  option domain-name-servers 101.198.199.200,114.114.114.114;
+  option log-servers 192.168.23.1;
+  option dhcp-renewal-time 86400;
+  option dhcp-rebinding-time 86400;
+  option netbios-name-servers 192.168.23.1;
+  option domain-name "mshome.net";
+  renew 5 2018/08/03 06:25:34;
+  rebind 5 2018/08/03 06:37:31;
+  expire 6 2018/08/04 06:37:31;
+}
+lease {
+  interface "eth0";
+  fixed-address 192.168.1.227;
+  option subnet-mask 255.255.255.0;
+  option routers 192.168.1.2;
+  option dhcp-lease-time 7200;
+  option dhcp-message-type 5;
+  option domain-name-servers 202.96.128.166,192.168.1.2;
+  option dhcp-server-identifier 192.168.1.2;
+  option dhcp-renewal-time 3600;
+  option broadcast-address 192.168.1.255;
+  option dhcp-rebinding-time 6300;
+  option host-name "EmbedSky-Board";
+  option domain-name "lan";
+  renew 4 2018/08/02 11:05:57;
+  rebind 4 2018/08/02 11:57:22;
+  expire 4 2018/08/02 12:12:22;
+}

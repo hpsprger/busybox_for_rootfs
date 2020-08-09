@@ -1,0 +1,9 @@
+export DISPLAY=:0.0
+
+#指定平台，省去了qt5.5运行时添加参数-platform eglfs
+export QT_QPA_PLATFORM=eglfs
+
+#QT_EGLFS_IMX6_NO_FB_MULTI_BUFFER可以不添加，定义多屏或单屏显示，用户自定
+export QT_EGLFS_IMX6_NO_FB_MULTI_BUFFER=1
+
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"

@@ -1,0 +1,9 @@
+TARGETS = rsyslog nvi hostapd killprocs udhcpd single cron dbus ssh ondemand rc.local
+INTERACTIVE =
+udhcpd: rsyslog
+single: killprocs
+cron: rsyslog
+dbus: rsyslog
+ssh: rsyslog
+ondemand: rsyslog udhcpd nvi hostapd cron dbus ssh
+rc.local: rsyslog udhcpd nvi hostapd cron dbus ssh

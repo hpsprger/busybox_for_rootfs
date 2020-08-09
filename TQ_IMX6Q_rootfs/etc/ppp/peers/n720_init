@@ -1,0 +1,23 @@
+#modify the following parameters according to your actual situation,
+#ttyUSBX mapping modem interface;The China Telecom 2G/3G needs to 
+#set the username and password to be “ctnet@mycdma.cn” and “vnet.mobi”, 
+#others,use the default parameters “card” and “card”for username and password.
+/dev/ttyUSB0
+user "cmnet"
+password "cmnet"
+#The following parameters are recommended to keep the default settings, 
+#and you can also modify according to your own conditions.
+115200
+hide-password
+noauth
+debug
+noipdefault
+local
+lock
+dump
+nodetach
+defaultroute
+remotename cmnet
+ipparam cmnet
+usepeerdns
+connect '/usr/sbin/chat -s -v -f /etc/ppp/peers/gprs-chat'

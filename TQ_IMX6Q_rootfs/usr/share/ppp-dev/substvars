@@ -1,0 +1,3 @@
+ppp:Depends=ppp (>= 2.4.7-1+~), ppp (<< 2.4.7-2~)
+ppp:Breaks=ppp (<< 2.4.7-1+~), ppp (>= 2.4.7-2~)
+ppp:PluginDir=/usr/lib/pppd/2.4.7

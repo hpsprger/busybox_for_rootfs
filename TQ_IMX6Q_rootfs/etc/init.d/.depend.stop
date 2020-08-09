@@ -1,0 +1,10 @@
+TARGETS = nvi hostapd udhcpd resolvconf urandom sendsigs rsyslog umountnfs.sh hwclock.sh networking umountfs umountroot halt reboot
+sendsigs: udhcpd nvi hostapd
+rsyslog: sendsigs udhcpd
+umountnfs.sh: sendsigs rsyslog udhcpd nvi hostapd
+hwclock.sh: rsyslog
+networking: umountnfs.sh
+umountfs: urandom udhcpd nvi umountnfs.sh hwclock.sh hostapd resolvconf networking
+umountroot: umountfs
+halt: umountroot
+reboot: umountroot

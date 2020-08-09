@@ -1,0 +1,9 @@
+/usr/lib/systemd/catalog systemd/noawait
+/etc/init.d systemd/noawait
+/usr/lib/mime/packages mime-support/noawait
+/usr/share/applications mime-support/noawait
+/lib/udev/hwdb.d udev/noawait
+/etc/init ureadahead/noawait
+/etc/init.d ureadahead/noawait
+/etc/dbus-1/system.d dbus/noawait
+/usr/share/dbus-1/system-services dbus/noawait

@@ -1,0 +1,8 @@
+PING www.baidu.com (14.215.177.38): 56 data bytes
+64 bytes from 14.215.177.38: seq=0 ttl=56 time=3.916 ms
+64 bytes from 14.215.177.38: seq=1 ttl=56 time=9.420 ms
+64 bytes from 14.215.177.38: seq=2 ttl=56 time=3.803 ms
+
+--- www.baidu.com ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 3.803/5.713/9.420 ms

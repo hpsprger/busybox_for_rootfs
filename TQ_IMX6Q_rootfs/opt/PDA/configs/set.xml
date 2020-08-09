@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<demolauncher>
+    <demos>
+        <example help="/opt/PDA/app/help/wifiHelp.txt" image="/opt/PDA/app/images/wifiBackGround.png" args="" name="网络参数设置" filename="/opt/PDA/bin/tqnetset" />
+    </demos>
+    <slideshow interval="10000" timeout="6000" >
+        <imagedir dir="slides" />
+    </slideshow>
+</demolauncher>
+

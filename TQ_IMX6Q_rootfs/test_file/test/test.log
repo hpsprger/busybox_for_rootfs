@@ -1,0 +1,17 @@
+===============START TEST CAN=================
+can0 to can1 faile
+can1 to can0 faile
+===============END TEST CAN=================
+===============START TEST KEY=================
+no found key
+===============start test BEEP=================
+no found beep
+===============START TEST LED=================
+Press ENTER or type command to continue
+===============END TEST LED=================
+===============START TEST WDG=================
+===============END TEST WDG=================
+===============START TEST CAN=================
+can0 to can1 faile
+can1 to can0 faile
+===============END TEST CAN=================

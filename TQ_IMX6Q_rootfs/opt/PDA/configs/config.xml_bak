@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<demolauncher>
+    <demos>
+        <example image="/opt/PDA/app/images/app.png" name="应用程序" filename="/opt/PDA/configs/app.xml" />
+        <example image="/opt/PDA/app/images/game.png" name="游戏" filename="/opt/PDA/configs/game.xml" />
+        <example image="/opt/PDA/app/images/function.png" name="天嵌科技测试程序" filename="/opt/PDA/configs/test.xml" />
+        <example image="/opt/PDA/app/images/set.png" name="设置" filename="/opt/PDA/configs/set.xml" />
+        <example image="/opt/PDA/app/images/govFile.png" name="文件管理" filename="/opt/PDA/configs/file.xml" />
+    </demos>
+    <slideshow interval="8000" timeout="6000" />
+</demolauncher>

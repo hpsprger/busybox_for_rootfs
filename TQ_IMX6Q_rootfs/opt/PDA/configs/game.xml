@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<demolauncher>
+    <demos>
+    </demos>
+    <slideshow interval="10000" timeout="6000" >
+        <imagedir dir="slides" />
+    </slideshow>
+</demolauncher>

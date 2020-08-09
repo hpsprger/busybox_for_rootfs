@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<demolauncher>
+    <demos>
+        <example help="/opt/PDA/app/help/comdebugger.txt" image="/opt/PDA/app/images/desk/uart_desk.png" args="" name="串口测试程序" filename="/opt/PDA/bin/tqserialportdebugger" />
+        <example help="/opt/PDA/app/help/comdebugger.txt" image="/opt/PDA/app/images/desk/can_desk.png" args="" name="can口测试程序" filename="/opt/PDA/bin/tqcandebugger" />
+        <example help="/opt/PDA/app/help/comdebugger.txt" image="/opt/PDA/app/images/desk/led_desk.png" args="" name="LED测试程序" filename="/opt/PDA/bin/tqledtest" />
+        <example help="/opt/PDA/app/help/comdebugger.txt" image="/opt/PDA/app/images/desk/gpio_desk.png" args="" name="GPIO测试程序" filename="/opt/PDA/bin/tqgpiodebugger" />
+        <example help="/opt/PDA/app/help/comdebugger.txt" image="/opt/PDA/app/images/desk/input_desk.png" args="" name="输入设备测试程序" filename="/opt/PDA/bin/tqbuttons" />
+        <example help="/opt/PDA/app/help/comdebugger.txt" image="/opt/PDA/app/images/desk/screen_desk.png" args="" name="多屏显示" filename="/opt/PDA/bin/tqscreendisplay" />
+        <example help="/opt/PDA/app/help/comdebugger.txt" image="/opt/PDA/app/images/desk/camera_desk.png" args="" name="摄像头测试" filename="/opt/PDA/bin/tqcamera" />
+        <example help="/opt/PDA/app/help/comdebugger.txt" image="/opt/PDA/app/images/desk/bluetooth_desk.png" args="" name="蓝牙测试" filename="/opt/PDA/bin/tqbluetooth" />
+        <example help="/opt/PDA/app/help/comdebugger.txt" image="/opt/PDA/app/images/desk/ftp_desk.png" args="" name="ftp文件传输" filename="/opt/PDA/bin/tqftp" />
+        <example help="/opt/PDA/app/help/comdebugger.txt" image="/opt/PDA/app/images/desk/i2c_desk.png" args="" name="I2C测试" filename="/opt/PDA/bin/tqi2c" />
+    </demos>
+    <slideshow interval="10000" timeout="6000" >
+        <imagedir dir="slides" />
+    </slideshow>
+</demolauncher>

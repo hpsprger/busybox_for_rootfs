@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<demolauncher>
+<demos>
+<example image="/opt/PDA/app/images/app.png" name="应用程序" filename="/opt/PDA/configs/app.xml" />
+<example image="/opt/PDA/app/images/game.png" name="游戏" filename="/opt/PDA/configs/game.xml" />
+<example image="/opt/PDA/app/images/function.png" name="测试程序" filename="/opt/PDA/configs/test.xml" />
+<example image="/opt/PDA/app/images/set.png" name="设置" filename="/opt/PDA/configs/set.xml" />
+<example image="/opt/PDA/app/images/govFile.png" name="文件管理" filename="/opt/PDA/configs/file.xml" />
+<!--<example image="/opt/PDA/app/images/ts_calibrateBackGround.png" name="触摸校准" filename="/usr/tslib/bin/ts_calibrate" />
+<example image="/opt/PDA/app/images/ts_test.jpg" name="触摸测试" filename="/opt/PDA/bin/tqcandebugger" />
+<example image="/opt/PDA/app/images/app.png" name="Application" filename="/opt/PDA/configs/app.xml" />
+<example image="/opt/PDA/app/images/game.png" name="Game" filename="/opt/PDA/configs/game.xml" />
+<example image="/opt/PDA/app/images/function.png" name="EmabedSKYTestDemo" filename="/opt/PDA/configs/test.xml" />
+<example image="/opt/PDA/app/images/set.png" name="Set" filename="/opt/PDA/configs/set.xml" />
+<example image="/opt/PDA/app/images/govFile.png" name="FileServer" filename="/opt/PDA/configs/file.xml" />-->
+
+
+<!--以下所有的例程皆为qt官方例程，都没有调试分辨率，若要使用请慎重！！！一旦启用，请去终端关掉PDA ，或者重启系统-->
+
+<!--<example filename="/examples/svg/embeddedsvgviewer/embeddedsvgviewer" name="SVG Viewer" image="screenshots/embeddedsvgviewer.png" args="-platform eglfs"/>
+<example filename="/examples/widgets/painting/deform/deform" name="Vector Deformation" image="screenshots/deform.png" args="-platform eglfs"/>
+<example filename="/examples/widgets/painting/pathstroke/pathstroke" name="Path Stroking" image="screenshots/pathstroke.png" args="-platform eglfs"/>
+<example filename="/examples/widgets/widgets/wiggly/wiggly" name="Wiggly Text" image="screenshots/wiggly.png" args="-platform eglfs"/>
+<example filename="/examples/widgets/painting/concentriccircles/concentriccircles" name="Concentric Circles" image="screenshots/concentriccircles.png" args="-platform eglfs"/>
+<example filename="/examples/graphicsview/elasticnodes/elasticnodes" name="Elastic Nodes" image="screenshots/elasticnodes.png" args="-maximize"/>-->
+
+</demos>
+<slideshow timeout="60000" interval="1000">
+<imagedir dir="slides"/>
+</slideshow>
+</demolauncher>

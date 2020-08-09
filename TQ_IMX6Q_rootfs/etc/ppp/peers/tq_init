@@ -1,0 +1,19 @@
+nodetach
+lock
+/dev/ttyUSB2
+115200
+user "card"
+password "card"
+crtscts
+show-password
+usepeerdns
+noauth
+noipdefault
+novj
+novjccomp
+noccp
+defaultroute
+ipcp-accept-local
+ipcp-accept-remote
+connect '/sbin/chat -s -v -f /etc/ppp/peers/tq_connect'
+disconnect '/sbin/chat -s -v -f /etc/ppp/peers/tq_disconnect'

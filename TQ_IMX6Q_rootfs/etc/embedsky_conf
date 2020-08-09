@@ -1,0 +1,45 @@
+#!/bin/sh -e
+#
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+
+export DISPLAY=:0.0 
+
+#指定qt插件平台，省去了运行时添加参数-platform eglfs
+export QT_QPA_PLATFORM=eglfs  
+
+#定义多屏或单屏显示，用户自定
+export QT_EGLFS_IMX6_NO_FB_MULTI_BUFFER=1 
+
+#设置系统显示位16位色深
+echo 16 > /sys/class/graphics/fb0/bits_per_pixel
+
+if [ -n /dev/touchscreen0 ] ; then
+	export set TOUCH_DEVICE=/dev/touchscreen0
+	export QT_QPA_GENERIC_PLUGINS=tslib:${TOUCH_DEVICE}
+else 
+	export set TOUCH_DEVICE=/dev/touchscreen0
+fi
+
+#设置tslib相关环境变量
+export set TSLIB_TSDEVICE=${TOUCH_DEVICE}
+export set TSLIB_CONFFILE=/etc/ts.conf
+export set TSLIB_PLUGINDIR=/usr/lib/ts
+export set TSLIB_CALIBFILE=/etc/pointercal
+export set TSLIB_CONSOLEDEVICE=none
+export set TSLIB_FBDEVICE=/dev/fb0
+
+export QT_QPA_PLATFORM_PLUGIN_PATH=/usr/lib/qt5/plugins/platforms
+
+#运行主界面程序
+#ts_calibrate
+/test_file/touchinteraction &
+

@@ -1,0 +1,55 @@
+#!/bin/bash
+set -e
+
+update-alternatives --install /usr/bin/ex ex /usr/bin/nex 20 \
+  --slave /usr/share/man/man1/ex.1.gz ex.1.gz /usr/share/man/man1/nex.1.gz
+update-alternatives --install /usr/bin/vi vi /usr/bin/nvi 20 \
+  --slave /usr/share/man/man1/vi.1.gz vi.1.gz /usr/share/man/man1/nvi.1.gz
+update-alternatives --install /usr/bin/view view /usr/bin/nview 20 \
+  --slave /usr/share/man/man1/view.1.gz view.1.gz /usr/share/man/man1/nview.1.gz
+
+update-alternatives --install /usr/bin/editor editor /usr/bin/nvi 19 \
+  --slave /usr/share/man/man1/editor.1.gz editor.1.gz /usr/share/man/man1/nvi.1.gz
+
+if [ $1 = "configure" ] ; then
+    if [[ -L /var/tmp/vi.recover || \
+	  -e /var/tmp/vi.recover && ! -d /var/tmp/vi.recover ]]; then
+      echo "Cannot create recovery directory /var/tmp/vi.recover" 1>&2
+      exit 1
+    fi
+    [ -d /var/tmp/vi.recover ] || mkdir -p /var/tmp/vi.recover
+    chown root:root /var/tmp/vi.recover
+    chmod 1777 /var/tmp/vi.recover
+fi
+
+# Automatically added by dh_systemd_enable
+# This will only remove masks created by d-s-h on package removal.
+deb-systemd-helper unmask nvi.service >/dev/null || true
+
+# was-enabled defaults to true, so new installations run enable.
+if deb-systemd-helper --quiet was-enabled nvi.service; then
+	# Enables the unit on first installation, creates new
+	# symlinks on upgrades if the unit file has changed.
+	deb-systemd-helper enable nvi.service >/dev/null || true
+else
+	# Update the statefile to add new symlinks (if any), which need to be
+	# cleaned up on purge. Also remove old symlinks.
+	deb-systemd-helper update-state nvi.service >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installinit
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ]; then
+	if [ -x "/etc/init.d/nvi" ]; then
+		update-rc.d nvi defaults >/dev/null
+	fi
+	if [ -x "/etc/init.d/nvi" ] || [ -e "/etc/init/nvi.conf" ]; then
+		invoke-rc.d nvi start || exit $?
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/init.d/nviboot 1.81.6-12 nvi -- "$@"
+# End automatically added section
+
+
+exit 0

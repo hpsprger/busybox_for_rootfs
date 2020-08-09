@@ -1,0 +1,43 @@
+##deb http://ports.ubuntu.com/ubuntu-ports xenial main
+
+#deb https://mirrors.ustc.edu.cn/ubuntu-ports xenial main restricted universe multiverse
+#deb-src https://mirrors.ustc.edu.cn/ubuntu-ports xenial main restricted universe multiverse
+
+#deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports xenial main restricted universe multiverse
+#deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports xenial main restricted universe multiverse
+
+##deb https://ports.ubuntu.com/ xenial main restricted universe multiverse
+##deb-src https://ports.ubuntu.com/ xenial main restricted universe multiverse
+
+##deb https://ports.ubuntu.com/ xenial-updates main restricted universe multiverse
+##deb-src https://ports.ubuntu.com/ xenial-updates main restricted universe multiverse
+
+##deb https://ports.ubuntu.com/ xenial-security main restricted universe multiverse
+##deb-src https://ports.ubuntu.com/ xenial-security main restricted universe multiverse
+
+##deb https://ports.ubuntu.com/ xenial-backports main restricted universe multiverse
+##deb-src https://ports.ubuntu.com/ xenial-backports main restricted universe multiverse
+
+deb [arch=armhf] https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports xenial main universe
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports xenial main universe
+
+deb [arch=armhf] https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports xenial-security main universe
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports xenial-security main universe
+
+deb [arch=armhf] https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports xenial-updates main universe
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports xenial-updates main universe
+
+deb [arch=armhf] http://mirrors.ustc.edu.cn/ubuntu-ports xenial main universe
+deb-src http://mirrors.ustc.edu.cn/ubuntu-ports xenial main universe
+
+deb [arch=armhf] http://mirrors.ustc.edu.cn/ubuntu-ports xenial-security main universe
+deb-src http://mirrors.ustc.edu.cn/ubuntu-ports xenial-security main universe
+
+deb [arch=armhf] http://mirrors.ustc.edu.cn/ubuntu-ports xenial-updates main universe
+deb-src http://mirrors.ustc.edu.cn/ubuntu-ports xenial-updates main universe
+
+#deb https://cn.archive.ubuntu.com/ubuntu/ xenial universe
+#deb-src https://cn.archive.ubuntu.com/ubuntu/ xenial universe
+#deb https://cn.archive.ubuntu.com/ubuntu/ xenial-updates universe
+#deb-src https://cn.archive.ubuntu.com/ubuntu/ xenial-updates universe
+
